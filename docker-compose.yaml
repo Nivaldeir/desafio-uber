@@ -1,10 +1,11 @@
 version: "3"
 services:
-  postgres:
-    image: postgres:latest
+  app:
+    container_name: backend_uber
+    build: .
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: postgres
+      ACESS_KEY_ID: 
+      SECRET_KEY: 
+      REGION_AWS: 
     ports:
       - "5432:5432"
